@@ -1,22 +1,48 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import New from "./Pages/New/New";
 import List from "./Pages/List/List";
 import Single from "./Pages/Single/Single";
 
+import "./index.css";
 
-import { useContext } from "react";
+function App() {
+	return (
+		<div className="App">
+			<Router>
+				<Routes>
+					<Route path="/">
+						<Route path="login" element={<Login />} />
+						<Route index element={<Home />} />
 
-import { useSelector, useDispatch } from 'react-redux'
+						<Route path="users">
+							<Route index element={<List />} />
+							<Route
+								path=":userId"
+								element={<Single />}
+							/>
+							<Route path="new" element={<New />} />
+						</Route>
 
-import "./index.css"
+						<Route path="products">
+							<Route index element={<List />} />
+							<Route
+								path=":productId"
+								element={<Single />}
+							/>
+							<Route path="new" element={<New />} />
+						</Route>
+					</Route>
+				</Routes>
+			</Router>
+		</div>
+	);
+}
 
+export default App;
+
+/*
 function App() {
   const currentUser = useSelector(state => state.userLogin.currentUser)
 
@@ -103,3 +129,6 @@ function App() {
 }
 
 export default App;
+
+
+*/
