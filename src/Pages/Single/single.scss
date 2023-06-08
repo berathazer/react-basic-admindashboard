@@ -1,0 +1,106 @@
+.single{
+    display: flex;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .singleContainer{
+        flex: 6; 
+
+
+        .items{
+            display: flex;
+    
+            .singleCard{
+                height: 300px;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+                flex: 3;
+                margin: 20px;
+                margin-right: 0;
+                position: relative;
+    
+                .top{
+                    display: flex; 
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 20px;
+    
+                    .info{
+                        color: rgb(215, 197, 197);
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+    
+                    .edit{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding:5px;
+                        background-color: rgba(126, 67, 197,0.2);
+                        color: purple;
+                        cursor: pointer;
+                    }
+                }
+
+                .bottom{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        padding: 10px;
+                        align-self: flex-start;
+                    }
+                    .content{
+                        width: 100%;
+                        display: flex;
+                        padding:0px 10px;
+                        flex-direction: column;
+                        justify-content: center;
+                        font-weight: 350;
+                        .name{
+                            font-size: 30px;
+                            color: rgb(118, 104, 104);
+                            font-weight: bold;
+                        }
+                        span{
+                            font-weight: bold;
+                            color: #888;
+                        }
+                        .mail,.phone,.address,.country{
+                            margin-top: 15px;
+                        }
+                    }   
+                }
+    
+            }
+        
+            .singleChart{
+                flex: 5;
+                height: 300px;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+                margin: 20px;
+                width: 100%;
+
+                .chart{
+                    height: 300px;
+                }
+            }
+        }
+
+
+        .table{
+            padding: 0px 10px;
+            .title{
+                color: rgba(136, 136, 136, 0.623);
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    
+
+}

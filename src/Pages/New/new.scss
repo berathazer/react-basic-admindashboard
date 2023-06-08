@@ -1,0 +1,139 @@
+.new{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .newContainer{
+        flex: 6;
+     
+        .title,.userForm{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+        }
+
+        .title{
+            margin: 20px;
+            color: #999;
+            font-size: 35px;
+            padding: 5px 15px;
+        }
+
+
+        .userForm{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+            margin: 20px;
+            margin-top: 0px;
+            .first{
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                .avatar{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin-bottom: 240px;
+                }
+            }
+            .middle{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                position: relative;
+                bottom: 45px;
+                .upload-image{
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #555;
+                    .icon{
+                        cursor: pointer;
+                        position: relative;
+                        top: 8px;
+                        font-size:30px;
+                        margin-left: 10px;
+                    }
+                }
+                .fullname,.phone,.address{
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid gray;
+                    gap: 5px;
+                    label{
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #555;
+                    }
+                    input{
+                        border: none;
+                        outline: none;
+                        padding:10px 0px;
+                        font-size: 16px;
+                        color: #777;
+                        &::placeholder{
+                            font-size:14px;
+                            padding: 10px;
+                        }
+                    }
+                    
+                }
+            }
+
+            .last{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                .sendButton{
+                    
+                    button{
+                        width: 150px;
+                        padding: 0.5rem 3rem;
+                        position: relative;
+                        right: 180px;
+                        margin-top: 35px;
+                        cursor: pointer;
+                        font-size: 18px;
+                        font-weight: bold;
+                        background-color: teal;
+                        color: white;
+                        outline: none;
+                        border: none;
+                    }
+                }
+                .username,.email,.password,.country{
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid gray;
+                    gap: 5px;
+
+                    input{
+                        border: none;
+                        outline: none;
+                        padding:10px 0px;
+                        font-size: 16px;
+                        color: #777;
+                        &::placeholder{
+                            font-size:14px;
+                            padding: 10px;
+                        }
+                    }
+
+                    label{
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #555;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}

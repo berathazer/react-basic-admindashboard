@@ -1,0 +1,90 @@
+$color-gray:#888;
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(196, 187, 187);
+    min-height: 100vh;
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.5px solid rgb(196, 187, 187);
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: purple;
+            
+        }
+    }
+    
+}
+
+.center{
+    ul{
+        .title{
+            font-size: 15px;
+            font-weight: 500;
+            padding: 5px 10px;
+            color: $color-gray;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            &:not(&:nth-child(1)){
+                margin-top: 7px;
+            }
+        }
+
+       
+        li{
+            display: flex;
+            align-items: center;
+            justify-content:start;
+            padding: 5px 15px;
+            
+            &:hover{
+                background-color: #ece8ff;
+                cursor: pointer;
+            }
+            span{
+                margin-left: 10px;
+                font-size: 13px;
+                font-weight: 500;
+                color: $color-gray ;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+
+            .icon{
+                color: #7451f8;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+.bottom{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    .icon-light{
+        color: #888;
+        &:hover{
+            opacity: 0.5;
+        }
+        
+    }
+    .icon-dark{
+        margin-left: 50px;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+
+    .icon-dark,.icon-light{
+        &:hover{
+            cursor: pointer;
+            
+        }
+    }
+
+}
